@@ -7,9 +7,7 @@ x = 50
 y = 50
 x_speed = 5
 y_speed = 10
-for looper in range(1,200):
-    screen.blit(my_ball,[x,y])
-    pygame.display.flip()
+
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
