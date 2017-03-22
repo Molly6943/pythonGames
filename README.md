@@ -4,5 +4,9 @@
 <p>b、玩家一共有三条命，如果全部用完则游戏结束.</p>
 <h3>游戏效果：</h3>
 ![pingpangGamesPic](http://av.jejeso.com/molly/pingpangGamePic.jpg);
+
+
 ![pingpangGamesPic](http://av.jejeso.com/molly/pingpangGamePic2.jpg);
+
+
 ![NeteaseCloudMusicFlac](http://av.jejeso.com/pic.png)
