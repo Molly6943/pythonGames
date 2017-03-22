@@ -10,12 +10,17 @@ class MyBallClass(pygame.sprite.Sprite):
     def move(self):
         global points,score_text
         self.rect = self.rect.move(self.speed)
+        print self.speed
         if self.rect.left < 0 or self.rect.right > screen.get_width():
             self.speed[0] = - self.speed[0]
             hit_wall.play()
         if self.rect.top <= 0:
             points = points + 1
-            self.speed[1] = - self.speed[1]
+            if self.speed[1] < 0:
+                self.speed[1] = random.randint(5,10)
+            else:
+                self.speed[1] = random.randint(-10,-5)
+
             score_text = font.render(str(points),1,(0,200,0))
             get_point.play()
         if self.rect.top >= screen.get_rect().bottom:
@@ -34,31 +39,31 @@ class MyPaddleClass(pygame.sprite.Sprite):
 
 pygame.init()
 pygame.mixer.init()
-pygame.mixer.music.load("bg_music.mp3")
+pygame.mixer.music.load("./bg_music/bg_music.mp3")
 pygame.mixer.music.set_volume(0.3)
 pygame.mixer.music.play(-1)
-hit = pygame.mixer.Sound("hit_hanndel.wav")
+hit = pygame.mixer.Sound("./bg_music/hit_hanndel.wav")
 hit.set_volume(0.60)
 
-hit_wall = pygame.mixer.Sound("hit_wall.wav")
+hit_wall = pygame.mixer.Sound("./bg_music/hit_wall.wav")
 hit_wall.set_volume(0.20)
 
-get_point = pygame.mixer.Sound("get_point.wav")
+get_point = pygame.mixer.Sound("./bg_music/get_point.wav")
 get_point.set_volume(0.30)
 
-game_over = pygame.mixer.Sound("game_over.wav")
+game_over = pygame.mixer.Sound("./bg_music/game_over.wav")
 game_over.set_volume(0.40)
 
-new_life = pygame.mixer.Sound("new_life.wav")
+new_life = pygame.mixer.Sound("./bg_music/new_life.wav")
 new_life.set_volume(0.40)
 
-splat = pygame.mixer.Sound("splat.wav")
+splat = pygame.mixer.Sound("./bg_music/splat.wav")
 splat.set_volume(0.40)
 
 screen = pygame.display.set_mode([640,480])
 clock = pygame.time.Clock()
-ball_speed = [random.choice([-10,9]),random.choice([-4,10])]
-myball = MyBallClass("pingpang.png",[50,50],ball_speed)
+ball_speed = [random.randint(-10,5),random.randint(-5,10)]
+myball = MyBallClass("./bg_img/pingpang.png",[50,50],ball_speed)
 ballGroup = pygame.sprite.Group(myball)
 paddle = MyPaddleClass([270,400])
 lives = 3

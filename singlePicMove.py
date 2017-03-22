@@ -2,7 +2,7 @@ import pygame,sys
 pygame.init()
 screen = pygame.display.set_mode([640,480])
 screen.fill([225,225,225])
-my_ball = pygame.image.load("no.png")
+my_ball = pygame.image.load("./bg_img/no.png")
 x = 50
 y = 50
 x_speed = 5

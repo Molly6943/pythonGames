@@ -20,7 +20,7 @@ class Ball(pygame.sprite.Sprite):
         newpos = self.rect.move(self.speed)
         self.rect = newpos
 
-myball = Ball("no.png",[10,0],[20,20])
+myball = Ball("./bg_img/no.png",[10,0],[20,20])
 held_town = False
 while 1:
     for event in pygame.event.get():

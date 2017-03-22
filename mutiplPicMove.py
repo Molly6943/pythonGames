@@ -33,7 +33,7 @@ def animate(group):
 size = width,height = 640,480
 screen = pygame.display.set_mode(size)
 screen.fill([255,255,255])
-img_file = "no.png"
+img_file = "./bg_img/no.png"
 clock = pygame.time.Clock()
 group = pygame.sprite.Group()
 for row in range(0,2):
