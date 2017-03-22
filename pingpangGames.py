@@ -10,7 +10,6 @@ class MyBallClass(pygame.sprite.Sprite):
     def move(self):
         global points,score_text
         self.rect = self.rect.move(self.speed)
-        print self.speed
         if self.rect.left < 0 or self.rect.right > screen.get_width():
             self.speed[0] = - self.speed[0]
             hit_wall.play()
