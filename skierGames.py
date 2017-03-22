@@ -130,7 +130,7 @@ while True:
             hit[0].passed = True
         elif hit[0].type == "flag" and not hit[0].passed:
             points += 10
-            obstacles.remove(hit[0])                 
+            obstacles.remove(hit[0])
 
     score_text = font.render("Score: " +str(points), 1, (0, 0, 0))
     animate()
