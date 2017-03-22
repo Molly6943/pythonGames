@@ -4,7 +4,21 @@
 <p>b、玩家一共有三条命，如果全部用完则游戏结束.</p>
 <h3>游戏效果：</h3>
 
-![pingpangGamesPic2](http://av.jejeso.com/molly/pingpangGamePic2.jpg)
+![pingpangGamesPic](https://github.com/Molly6943/pythonGames/blob/master/bg_img/pingpangGamePic.jpeg)
 
 
-![skierGames](https://github.com/Molly6943/pythonGames/blob/master/bg_img/pingpangGamePic.jpeg)
+![pingpangGamesPic2](https://github.com/Molly6943/pythonGames/blob/master/bg_img/pingpangGamePic2.jpeg)
+
+
+<h2>2、滑雪游戏（skierGames)</h2></br>
+<h3>游戏规则：</h3></br>
+<p>a、玩家滑下小山，努力避开树，尽量捡到小旗。</p>
+<p>b、如果碰到树就负100分，如果捡到小旗就加10分</p>
+<h3>游戏效果：</h3>
+
+
+![skierGamePic](https://github.com/Molly6943/pythonGames/blob/master/bg_img/skierGame.jpeg)
+
+
+![skierGamePic2](https://github.com/Molly6943/pythonGames/blob/master/bg_img/skierGamePic.jpeg)
+
